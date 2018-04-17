@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style_strona_obiektu.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/slider_style.css') }}">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <img src="../static/img/gramynahali.png" />
+                </div>
+                <nav>
+                    <ul class="list">
+                        <li class="list__item"><a href="#">Item 1</a></li>
+                        <li class="list__item"><a href="#">Item 2</a></li>
+                        <li class="list__item"><a href="#">Item 3</a></li>
+                        <li class="list__item"><a href="#">Item 4</a></li>
+                        <li class="list__item"><a href="#">Item 6</a></li>
+                    </ul>
+                </nav>
+                <input class="search" placeholder="Wyszukaj..." />
+                <button class="btn">Zarejestruj się</button>
+                <button class="btn">Zaloguj się</button>
+            </header>
+
+            <section class="section description">
+                <div class="photo_title">
+                    <h1>Hala Sportowa</h1>
+                    <div class="rating">
+                        <span class="fa fa-star fa-lg rating__item rating__item--checked"></span>
+                        <span class="fa fa-star fa-lg rating__item rating__item--checked"></span>
+                        <span class="fa fa-star fa-lg rating__item rating__item--checked"></span>
+                        <span class="fa fa-star fa-lg rating__item"></span>
+                        <span class="fa fa-star fa-lg rating__item"></span>
+                    </div>
+                </div>
+
+
+                <!-- http://benschwarz.github.io/gallery-css/#item-3 -->
+                <div class="gallery items-2 autoplay">
+                    <div id="item-1" class="control-operator"></div>
+                    <div id="item-2" class="control-operator"></div>
+
+                    <figure class="item">
+                        <img src="../static/img/hala.jpg">
+                    </figure>
+
+                    <figure class="item">
+                        <img src="../static/img/sports-hall-end-shot.jpg">
+                    </figure>
+
+
+                    <div class="controls">
+                        <a href="#item-1" class="control-button">•</a>
+                        <a href="#item-2" class="control-button">•</a>
+                    </div>
+                </div>
+
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus quam orci, sodales et finibus ac, eleifend eget tellus.
+                    Nulla diam urna, commodo et ante in, scelerisque interdum massa.
+                    Praesent tincidunt vulputate scelerisque.
+                </p>
+                <p>
+                    Donec aliquam mattis erat, vulputate vehicula nulla gravida nec.
+                    Morbi quis fermentum tortor, nec tempor urna.
+                    Nulla rutrum in quam gravida tempus. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Vivamus quam orci, sodales et finibus ac,
+                    eleifend eget tellus.
+                </p>
+            </section>
+
+
+            <aside class="aside">
+                <div class="location">
+                    <h2>Dane adresowe obiektu</h2>
+                    <div class="data">
+                        <p>ul. Piłkarska 78/34<br>65-698 Wrocław</p>
+                        <p><a href="www.halasportowa.pl">www.halasportowa.pl</a></p>
+                        <p><a href="mailto:hala@sportowa.pl">hala@sportowa.pl</a></p>
+                        <p><a href="tel:+48503565565">+48 503 565 565</a></p>
+                    </div>
+                    <div id="map"></div>
+                </div>
+                <div class="open">
+                    <h2>Godziny otwarcia</h2>
+                    <div class="data">
+                        <p>poniedziałek 9:00-20:00</p>
+                        <p>wtorek 9:00-20:00</p>
+                        <p>środa 9:00-20:00</p>
+                        <p>czwartek 9:00-20:00</p>
+                        <p>piątek 9:00-20:00</p>
+                        <p>sobota 9:00-20:00</p>
+                        <p>niedziela 9:00-20:00</p>
+                    </div>
+                </div>
+                <div class="sport">
+                    <h2>Dostępne sporty</h2>
+                    <div class="data">
+                        <p>piłka halowa</p>
+                        <p>siatkówka</p>
+                        <p>piłka ręczna</p>
+                        <p>koszykówka</p>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="section calendar">
+                <h2>Zarezerwuj halę</h2>
+                <div class="calendar-photo">
+                    <img src="../static/img/time_table.png" />
+                </div>
+            </section>
+
+            <section class="section comments">
+                <h2>Komentarze</h2>
+                <form>
+                    <div class="comment">
+                        <div class="comment-title">
+                            <img class="comment-photo" src="../static/img/profile.jpg" />
+                            <h4 class="comment-name">Anonimowy</h4>
+                        </div>
+                        <textarea class="comment-input" placeholder="Komentarz..."></textarea>
+                    </div>
+                    <button class="btn">Wyślij</button>
+                </form>
+                <div class="clearfix"></div>
+
+                <div class="comment">
+                    <div class="comment-title">
+                        <img class="comment-photo" src="../static/img/laleczka.png" />
+                        <h4 class="comment-name">Prrety</h4>
+                    </div>
+                    <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis efficitur turpis. Pellentesque in sagittis quam. Proin vestibulum elit odio, vitae elementum libero faucibus in</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-title">
+                        <img class="comment-photo" src="../static/img/mesi.png" />
+                        <h4 class="comment-name">Mr. Shorty</h4>
+                    </div>
+                    <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis efficitur turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis efficitur turpis. Ut quis efficitur turpis. Pellentesque in sagittis quam. Proin vestibulum elit odio, vitae elementum libero faucibus in</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-title">
+                        <img class="comment-photo" src="../static/img/neymar.png" />
+                        <h4 class="comment-name">GOD</h4>
+                    </div>
+                    <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis efficitur turpis. Pellentesque in sagittis quam. Proin vestibulum elit odio, vitae elementum libero faucibus in</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-title">
+                            <img class="comment-photo" src="../static/img/lewandowski.png" />
+                            <h4 class="comment-name">Lewy Prawy</h4>
+                        </div>
+                    <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis efficitur turpis. Pellentesque in sagittis quam. Proin vestibulum elit odio, vitae elementum libero faucibus in</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-title">
+                        <img class="comment-photo" src="../static/img/rooney.png" />
+                        <h4 class="comment-name">Mr. Rooney</h4>
+                    </div>
+                    <p class="comment-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis efficitur turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis efficitur turpis. Pellentesque in sagittis quam. Proin vestibulum elit odio, vitae elementum libero faucibus in</p>
+                </div>
+            </section>
+
+            <div class="clearfix"></div>
+            <footer class="footer">
+                <ul class="list">
+                    <li class="list__item">Item 1</li>
+                    <li class="list__item">Item 2</li>
+                    <li class="list__item">Item 3</li>
+                    <li class="list__item">Item 4</li>
+                </ul>
+            </footer>
+        </div>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk8aJdtcmvqQau4oqJW_6L3oR2Hgj1ZGY&callback=initMap"></script>
+        <script>
+            function initMap() {
+                var place = {lat: 51.1269938, lng: 16.8514366};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: place
+                });
+                var marker = new google.maps.Marker({
+                    position: place,
+                    animation: google.maps.Animation.DROP,
+                    map: map
+                });
+            }
+        </script>
+    </body>
+</html>
